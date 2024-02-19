@@ -8,7 +8,7 @@ body{
 
 .weather-container{    
     width: 30%;
-    margin: 55px auto;
+    margin: 65px auto;
     display: block;
     background: linear-gradient(359.3deg, rgb(196, 214, 252) 1%, rgba(187, 187, 187, 0) 70.9%);
     border: 1px rgb(183, 204, 250)  solid;
@@ -26,7 +26,7 @@ body{
     font-weight: 600;
     background-color: rgb(207, 205, 205);
     color: black;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .submit-button{
@@ -48,33 +48,29 @@ body{
 }
 
 header{
-    border-bottom: 1px rgb(131, 129, 129) solid;
-    
+    border-bottom: 1px rgb(145, 138, 138) solid;
+    padding: 0 0 20px 0;
+
 }
 
-.current-weather {
+main{
+    padding: 30px 15px;
+}
+
+.weather-parameters {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
 }
 
-.temperature {
-    font-size: 78px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    position: relative;
-    bottom: -20px;
-}
-
-.current-weather h1 {
+.weather-details h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: 800;
-    margin-bottom: 10px;
+    line-height: 40px;
+    margin-bottom: 5px;
 }
 
 .weather-readings{
-    margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: rgb(105, 102, 102);
@@ -87,18 +83,27 @@ header{
     font-weight: bolder;
 }
 
+.temperature-container{
+    display: flex;
+}
+
 .temperature-emoji{
-    font-size: 40px;
-    position: relative;
-    bottom: -10px;
-    margin-right: 10px;
+    width: 88px;
+    height: 88px;
+    margin-top: 15px;
+}
+
+.temperature {
+    font-size: 88px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
 }
 
 .temperature-unit{
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
-    position: relative;
-    top: -16px;
+    margin-top: 25px;
 }
 
 footer p{
@@ -124,5 +129,5 @@ footer p a:hover{
 
 footer{
     border-top: 1px  rgb(202, 199, 199) solid;
-    padding: 20px 0 5px 0 ;
+    padding: 20px 0 0 0;
 }

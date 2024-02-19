@@ -11,42 +11,42 @@
     <title>Weather Application</title>
 </head>
 <body>
-    <div class="weather-container">
-      <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required class="form-input" id="form-input"/>
-          <input type="submit" value="Search"  class="submit-button" id="submit-button"/>
-        </form>
-      </header>
+  <div class="weather-container">
+    <header>
+      <form>
+        <input type="search" placeholder="Enter a city..." required class="form-input" id="form-input"/>
+        <input type="submit" value="Search"  class="submit-button" id="submit-button"/>
+      </form>
+    </header>
 
-      <main>
-        <div class="current-weather">
-          <div class="weather-details">
-            <h1>Paris</h1>
+    <main>
+      <div class="weather-parameters">
+        <div class="weather-details">
+          <h1>Nigeria</h1>
 
-            <p class="weather-readings">
-              <span id="date">Saturday 15:32,</span> moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-            </p>
-          </div>
+          <p class="weather-readings">
+            <span id="current-date">Saturday 15:32,</span> <span id="description">clear sky</span> <br />
+            Humidity: <strong id="humidity">56%</strong>, Wind: <strong id="wind-speed">4.12km/h</strong>
+          </p>
+        </div>
 
-          <div>
-            <span class="temperature-emoji">☀️</span> 
-            <span class="temperature" id="temperature">14</span>
-            <span class="temperature-unit">°C</span></div>
-          </div> 
-      </main>
-      
-      <footer>
-        <p>
-          This project was coded by
-          <a href="https://www.linkedin.com/in/nimota-yusuf-463b83240" target="_blank">Neemah</a> and is
-          <a href="https://github.com/Nimota-Yusuf/SheCodes_Week5" target="_blank"> on GitHub</a> and
-          <a href="https://zesty-llama-d753fa.netlify.app/" target="_blank">hosted on Netlify</a>
-        </p>
-      </footer>
-    </div>  
-
+        <div class="temperature-container">
+          <span class="temperature-emoji" id="temperature-emoji"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png" alt="weatherApp_icon"></span> 
+          <span class="temperature" id="temperature">22</span>
+          <span class="temperature-unit">°C</span>
+        </div> 
+      </div>  
+    </main>
+    
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://www.linkedin.com/in/nimota-yusuf-463b83240" target="_blank">Neemah</a> and is
+        <a href="https://github.com/Nimota-Yusuf/SheCodes_Week5" target="_blank"> on GitHub</a> and
+        <a href="https://zesty-llama-d753fa.netlify.app/" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
     <script src="index.js"></script>
+  </div>   
 </body>
 </html>
